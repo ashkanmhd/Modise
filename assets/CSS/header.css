@@ -1,0 +1,395 @@
+:root {
+    --WhiteColor: #fff;
+    --grayColor: #333;
+    --menuNavbar: #e1e1e1;
+}
+
+/* header */
+
+.header-video {
+    background-color: #a0ffc4;
+}
+
+/* --------- Responsive --------- */
+
+@media (max-width: 768px) {
+    .header-video img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+/* ---------------------- logo and link ---------------------- */
+
+.favorites-item-header-text {
+    color: #34343c;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.account-item-header:hover .account-item-header-login{
+    color: #34343c;
+}
+
+.account-item-header-login {
+    color: #7c7c8d;
+    font-size: 11px;
+}
+
+.account-item-header-account {
+    color: #34343c;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.cart-item-header:hover .cart-item-header-cart {
+    color: #34343c;
+}
+
+.cart-item-header-cart {
+    color: #7c7c8d;
+    font-size: 11px;
+}
+
+.icon-header {
+    font-size: 1.6rem;
+}
+
+/* ---------------------- navbar ---------------------- */
+
+.navbar--header {
+    background-color: var(--grayColor);
+}
+
+.item-input {
+    background-color: var(--WhiteColor);
+    width: 19%;
+}
+
+.navbar-link {
+    color: var(--WhiteColor);
+    font-weight: 700;
+    font-size: 14px;
+    padding: .7rem 1.5rem;
+}
+
+.navbar-link:hover {
+    color: var(--WhiteColor);
+}
+
+.input-header {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.fa-magnifying-glass {
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+#mark {
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+.menu--Link {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    right: 0;
+    top: 43px;
+    visibility: hidden;
+}
+
+.menu-link-backgroung {
+    visibility: hidden;
+    z-index: 2;
+    background-color: var(--WhiteColor);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    border-color: var(--menuNavbar);
+    box-shadow: 0 5px 10px var(--menuNavbar);
+    transition: all .3s linear;
+}
+
+.navbar-hover:hover .menu-link-backgroung {
+    animation: animate-menu-link .5s forwards;
+}
+@keyframes animate-menu-link {
+    0% {
+        top: 10px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.menu-list {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    width: 130px;
+}
+
+.menu-link-item {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.menu-brand {
+    width: 100px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-brand img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.brand-border {
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.point {
+    display: none;
+    font-size: 3rem;
+    position: absolute;
+    top: -23px;
+}
+
+/* --------- Responsive --------- */
+
+@media (max-width: 1350px) {
+    .new,
+    .present {
+        display: none;
+    }
+    .item-input {
+        position: absolute;   
+        left: 10px;
+        width: 22%;
+    }
+    .point {
+        display: inline-block;
+        left: 24%;
+    }
+}
+
+@media (max-width: 1140px) {
+    .Sport {
+        display: none;
+    }
+}
+
+@media (max-width: 1025px) {
+    .Sport {
+        display: none;
+    }
+    .navbar-link {
+        padding: .7rem .6rem;
+    }
+    .Sport,
+    .new {
+        display: block;
+    }
+}
+
+@media (max-width: 968px) {
+    .new {
+        display: none;
+    }
+}
+
+@media (max-width: 840px) {
+    #navbar,
+    #navbar-scroll,
+    .logo-and-link {
+        display: none !important;
+    }
+}
+
+/* ---------------------- nav-Responsive ---------------------- */
+
+.nav-responsive {
+    display: none;
+}
+
+.responsive {
+    display: flex;
+    background-color: var(--WhiteColor);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 2;
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+.nav-responsive-img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-responsive-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.nav-icon {
+    font-size: 1.4rem;
+    color: var(--grayColor);
+}
+
+.bars {
+    font-size: 1.8rem;
+}
+
+/* --------- Responsive --------- */
+
+@media (max-width: 840px) {
+    .nav-responsive {
+        display: flex;
+    }
+}
+
+/* ---------------------- scroll-navbar ---------------------- */
+
+#navbar-scroll {
+    display: none;
+    z-index: 2;
+}
+
+.navbar-link-scroll {
+    font-weight: 700;
+    font-size: 14px;
+    padding: .7rem 1.5rem;
+}
+
+.category-icon-scroll {
+    position: absolute;
+    left: 0;
+}
+
+.icon-navbar-scroll {
+    font-size: 1.4rem;
+}
+
+.animation-scroll-navbar {
+    animation: scroll-animation .5s linear forwards;
+}
+@keyframes scroll-animation {
+    0% {
+        top: -20px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.point-scroll {
+    font-size: 3rem;
+    position: absolute;
+    top: -23px;
+    display: none;
+}
+
+/* --------- Responsive --------- */
+
+@media (max-width: 1240px) {
+    .present-scroll {
+        display: none;
+    }
+
+    .point-scroll {
+        left: 19%;
+        display: inline-block;
+    }
+    
+    .navbar-link-scroll {
+        padding: .7rem 1.2rem;
+    }
+}
+
+@media (max-width: 1120px) {
+    .new-scroll {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .sprot {
+        display: none;
+    }
+
+    .navbar-link-scroll {
+        padding: .7rem .9rem;   
+    }
+
+    .point-scroll {
+        left: 20%;
+    }
+}
+
+/* ---------------------- hamburger menu ---------------------- */
+
+#hamburger-menu-responsive {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 95%;
+    z-index: 8;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+#account {
+    display: none;
+}
+
+.main-menu > section > p:first-child {
+    background-color: #e8e8e8;
+}
+
+.close-menu {
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin: 5rem 1rem 0 0;
+}
+
+.item {
+    padding: 2rem 2rem;
+    cursor: pointer;
+}
+
+.list-account {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.white-background {
+    background-color: var(--WhiteColor);
+}
+
+#menu,
+.item:last-child {
+    background-color: var(--WhiteColor);
+}
+
+#menu li {
+    cursor: pointer;
+}

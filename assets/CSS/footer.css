@@ -1,0 +1,223 @@
+:root {
+    --WhiteColor: #fff;
+    --grayColor: #333;
+    --menuNavbar: #e1e1e1;
+}
+
+.footer {
+    background-color: var(--grayColor);
+    color: var(--WhiteColor);
+}
+
+.about-us-text,
+.contact-text,
+.services-text {
+    color: #a8aeba;
+    font-size: .9rem;
+}
+
+/* --------------- about -------------- */
+
+.membership {
+    border: 1px solid var(--WhiteColor);
+    padding: .5rem;
+}
+
+.membership-input {
+    border: none;
+    background: none;
+    color: #a8aeba;
+    font-size: .8rem;
+    width: 80%;
+    outline: none;
+}
+
+.arrow {
+    position: absolute;
+    top: 7px;
+    color: #a8aeba;
+    font-size: 1.1rem;
+}
+
+.arrow:hover {
+    animation: arrow .4s linear forwards;
+}
+@keyframes arrow {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+}
+
+.logo-footer {
+    margin-top: 2rem;
+    width: 150px;
+    height: auto;
+}
+
+.logo-footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* --------- Responsive --------- */
+
+@media (max-width: 992px) {
+    .arrow {
+        position: static;
+    }
+
+    .logo-footer {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .membership-input {
+        width: 100%;
+    }
+    
+    .logo-footer {
+        width: 200px;
+    }
+}
+
+/* --------------- contact -------------- */
+
+.location-text {
+    text-indent: 20px;
+    margin-right: -10px;
+    line-height: 1.6rem;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+}
+
+.contact-text-hover:hover {
+    color: var(--WhiteColor);
+}
+
+/* --------- Responsive --------- */
+
+@media (max-width: 1200px) {
+    .contact-icon {
+        pointer-events: none;
+    }
+    .contact-text-hover:hover {
+        color: #a8aeba;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .email {
+        font-size: .6rem;
+    }
+    .call {
+        font-size: .7rem;
+        margin-top: .4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .email {
+        font-size: 1rem;
+    }
+    .call {
+        font-size: 1rem;
+        margin-top: .4rem;
+    }
+}
+
+/* --------------- services -------------- */
+
+.services-text {
+    letter-spacing: -.5px;
+    line-height: 1.2rem;
+}
+
+/* --------------- logos -------------- */
+
+.logo-confirmation {
+    width: auto;
+    height: auto;
+}
+
+.logo-confirmation img {
+    box-shadow: 0 30px 40px rgb(0 0 0 / 30%);
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-connection{
+    width: 25px;
+    height: auto;
+}
+
+.img-connection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* --------- Responsive --------- */
+
+@media (max-width: 992px) {
+    .logo-confirmation {
+        box-shadow: 0 30px 40px rgb(0 0 0 / 30%);
+    }
+    
+    .logo-confirmation img {
+        box-shadow: none;
+        height: 100%;
+    }
+    .img-connection{
+        width: auto;
+        height: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-confirmation {
+        width: 230px;
+        height: auto;
+    }
+}
+
+/* --------------- legal -------------- */
+
+.legal {
+    color: #a8aeba;
+}
+
+/* --------- Responsive --------- */
+
+@media (max-width: 768px) {
+    .legal {
+        font-size: .9rem;
+    }
+}
+
+/* --------------- all responsive --------------- */
+
+@media (max-width: 992px) {
+    h6 {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h6 {
+        font-size: 1.1rem;
+    }
+}
